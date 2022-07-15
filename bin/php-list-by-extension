@@ -1,0 +1,35 @@
+#!/usr/bin/php
+<?php
+
+if (php_sapi_name() !== 'cli') {
+    exit;
+}
+
+$root_app = dirname(__DIR__);
+
+if (!is_file($root_app . '/vendor/autoload.php')) {
+    $root_app = dirname(__DIR__, 4);
+}
+
+require $root_app . '/vendor/autoload.php';
+
+use FreedomJsk\FileLister;
+
+$argv = array_slice($argv, 1);
+
+if(!isset($argv[0])){
+	echo "Failure";
+	exit(1);
+}
+$folder = $argv[0];
+$extension = "";
+if(isset($argv[1])){
+	$extension = $argv[1];
+}
+
+
+$r = FileLister::listData($folder, $extension);
+echo json_encode($r, JSON_PRETTY_PRINT);
+exit(0);
+
+//"E:/e-code/freedom/php-list-by-extension"

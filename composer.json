@@ -1,0 +1,26 @@
+{
+    "description": "List files on a directory by a defined extension",
+    "name": "jimmyMisa/php-list-by-extension",
+    "require": {
+        "php": ">=7.4"
+    },
+    "homepage": "https://github.com/jimmyMisa/php-list-by-extension.git",
+    "keywords": ["cli","list", "demo", "extension"],
+    "license": "proprietary",
+    "type": "library",
+    "authors": [
+        {
+            "name": "jimmyMisa",
+            "email": "jimmy.samuel.andriamparany.pro@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FreedomJsk\\": "src/"
+        }
+    },
+    "require": {},
+    "bin": [
+        "bin/minicli"
+    ]
+}
