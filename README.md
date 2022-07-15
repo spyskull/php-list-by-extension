@@ -9,3 +9,7 @@ composer install jimmymisa/php-list-by-extension
 ```
 php vendor/bin/php-list-by-extension [[folder]] [[extension]]
 ```
+For windows
+```
+.\vendor\bin\php-list-by-extension [[folder]] [[extension]]
+```
