@@ -21,6 +21,6 @@
     },
     "require": {},
     "bin": [
-        "bin/minicli"
+        "bin/php-list-by-extension"
     ]
 }
