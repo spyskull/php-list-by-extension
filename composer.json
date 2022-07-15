@@ -1,6 +1,6 @@
 {
     "description": "List files on a directory by a defined extension",
-    "name": "jimmyMisa/php-list-by-extension",
+    "name": "jimmymisa/php-list-by-extension",
     "require": {
         "php": ">=7.4"
     },

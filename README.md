@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-composer install jimmyMisa/php-list-by-extension
+composer install jimmymisa/php-list-by-extension
 ```
 
 ## Usage
